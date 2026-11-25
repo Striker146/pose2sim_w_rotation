@@ -6838,9 +6838,9 @@
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-1.57 1.57</range>
+							<range>-1.5707963300000001 1.5707963300000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -6850,13 +6850,13 @@
 						</Coordinate>
 						<Coordinate name="arm_add_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-1.43</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-2.09 1.57</range>
+							<range>-2.0943950999999998 1.5707963300000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -6870,7 +6870,23 @@
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-1.57 1.57</range>
+							<range>-1.5707963300000001 1.5707963300000001</range>
+							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>true</clamped>
+							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+							<prescribed_function />
+							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+						</Coordinate>
+						<Coordinate name="shoulder_rx">
+							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0</default_value>
+							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+							<default_speed_value>0</default_speed_value>
+							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.20000000000000001 0.20000000000000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>false</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -6880,7 +6896,40 @@
 							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
 							<prescribed>false</prescribed>
 						</Coordinate>
-					</coordinates>					<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+						<Coordinate name="shoulder_ry">
+							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0</default_value>
+							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+							<default_speed_value>0</default_speed_value>
+							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.20000000000000001 0.20000000000000001</range>
+							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+							<prescribed_function />
+							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+						</Coordinate>
+						<Coordinate name="shoulder_rz">
+							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0</default_value>
+							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+							<default_speed_value>0</default_speed_value>
+							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.20000000000000001 0.20000000000000001</range>
+							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+							<prescribed_function />
+							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+						</Coordinate>
+					</coordinates>
+					<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
 					<frames>
 						<PhysicalOffsetFrame name="torso_offset">
 							<!--The geometry used to display the axes of this Frame.-->
@@ -6913,69 +6962,73 @@
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
 					</frames>
-					<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<!--The spatial transform defining how the child body moves with respectto the parent as a function of the generalized coordinates.-->
 					<SpatialTransform>
-						<!--3 Axes for rotations are listed first.-->
+						<!--The first TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation1">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
 							<coordinates>arm_flex_r</coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 0 1</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
 							</LinearFunction>
 						</TransformAxis>
+						<!--The second TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation2">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
 							<coordinates>arm_add_r</coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>1 0 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
 							</LinearFunction>
 						</TransformAxis>
+						<!--The third TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation3">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
 							<coordinates>arm_rot_r</coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 1 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
 							</LinearFunction>
 						</TransformAxis>
-						<!--3 Axes for translations are listed next.-->
+						<!--The first TransformAxis defining a translation along an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="translation1">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
+							<coordinates>shoulder_rx</coordinates>
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>1 0 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<Constant name="function">
-								<value>0</value>
-							</Constant>
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
+							<LinearFunction name="function">
+								<coefficients> 1 0</coefficients>
+							</LinearFunction>
 						</TransformAxis>
+						<!--The second TransformAxis defining a translation along an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="translation2">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
+							<coordinates>shoulder_ry</coordinates>
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 1 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<Constant name="function">
-								<value>0</value>
-							</Constant>
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
+							<LinearFunction name="function">
+								<coefficients> 1 0</coefficients>
+							</LinearFunction>
 						</TransformAxis>
+						<!--The third TransformAxis defining a translation along an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="translation3">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
+							<coordinates>shoulder_rz</coordinates>
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 0 1</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<Constant name="function">
-								<value>0</value>
-							</Constant>
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
+							<LinearFunction name="function">
+								<coefficients> 1 0</coefficients>
+							</LinearFunction>
 						</TransformAxis>
 					</SpatialTransform>
 				</CustomJoint>
@@ -7169,7 +7222,7 @@
 						</PhysicalOffsetFrame>
 					</frames>
 				</UniversalJoint>
-				<CustomJoint name="acromial_l">
+		<CustomJoint name="acromial_l">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
 					<socket_parent_frame>torso_offset</socket_parent_frame>
 					<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
@@ -7182,9 +7235,9 @@
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-1.57 1.57</range>
+							<range>-1.5707963300000001 1.5707963300000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -7194,13 +7247,13 @@
 						</Coordinate>
 						<Coordinate name="arm_add_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-1.43</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-2.09 1.57</range>
+							<range>-2.0943950999999998 1.5707963300000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -7214,7 +7267,55 @@
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-1.57 1.57</range>
+							<range>-1.5707963300000001 1.5707963300000001</range>
+							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>true</clamped>
+							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+							<prescribed_function />
+							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+						</Coordinate>
+						<Coordinate name="shoulder_lx">
+							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0</default_value>
+							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+							<default_speed_value>0</default_speed_value>
+							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.20000000000000001 0.20000000000000001</range>
+							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+							<prescribed_function />
+							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+						</Coordinate>
+						<Coordinate name="shoulder_ly">
+							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0</default_value>
+							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+							<default_speed_value>0</default_speed_value>
+							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.20000000000000001 0.20000000000000001</range>
+							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+							<prescribed_function />
+							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+						</Coordinate>
+						<Coordinate name="shoulder_lz">
+							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0</default_value>
+							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+							<default_speed_value>0</default_speed_value>
+							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.20000000000000001 0.20000000000000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>false</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -7258,69 +7359,73 @@
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
 					</frames>
-					<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<!--The spatial transform defining how the child body moves with respectto the parent as a function of the generalized coordinates.-->
 					<SpatialTransform>
-						<!--3 Axes for rotations are listed first.-->
+						<!--The first TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation1">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
 							<coordinates>arm_flex_l</coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 0 1</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
 							</LinearFunction>
 						</TransformAxis>
+						<!--The second TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation2">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
 							<coordinates>arm_add_l</coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>-1 0 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
 							</LinearFunction>
 						</TransformAxis>
+						<!--The third TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation3">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
 							<coordinates>arm_rot_l</coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 -1 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
 							</LinearFunction>
 						</TransformAxis>
-						<!--3 Axes for translations are listed next.-->
+						<!--The first TransformAxis defining a translation along an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="translation1">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
+							<coordinates>shoulder_lx</coordinates>
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>1 0 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<Constant name="function">
-								<value>0</value>
-							</Constant>
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
+							<LinearFunction name="function">
+								<coefficients> 1 0</coefficients>
+							</LinearFunction>
 						</TransformAxis>
+						<!--The second TransformAxis defining a translation along an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="translation2">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
+							<coordinates>shoulder_ly</coordinates>
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 1 0</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<Constant name="function">
-								<value>0</value>
-							</Constant>
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
+							<LinearFunction name="function">
+								<coefficients> 1 0</coefficients>
+							</LinearFunction>
 						</TransformAxis>
+						<!--The third TransformAxis defining a translation along an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="translation3">
-							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-							<coordinates></coordinates>
-							<!--Rotation or translation axis for the transform.-->
+							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
+							<coordinates>shoulder_lz</coordinates>
+							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 0 1</axis>
-							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
-							<Constant name="function">
-								<value>0</value>
-							</Constant>
+							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
+							<LinearFunction name="function">
+								<coefficients> 1 0</coefficients>
+							</LinearFunction>
 						</TransformAxis>
 					</SpatialTransform>
 				</CustomJoint>
